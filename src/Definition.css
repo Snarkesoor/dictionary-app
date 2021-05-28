@@ -1,0 +1,11 @@
+.definition {
+  text-align: center;
+  background-color: rgb(235, 219, 219);
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  box-shadow: 5px 5px 12px gray;
+  max-width: 600px;
+  padding: 10px 30px;
+  margin: 30px auto;
+}
