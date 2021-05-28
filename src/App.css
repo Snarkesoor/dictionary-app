@@ -1,3 +1,35 @@
 body {
-  background-color: azure;
+  background-image: linear-gradient(
+    45deg,
+    #ff9a9e 0%,
+    #fad0c4 99%,
+    #fad0c4 100%
+  );
+  font-family: "Lora", serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.App-header,
+.phonetic {
+  text-align: center;
+  background-color: rgb(235, 219, 219);
+  border-color: gray;
+  border-style: outset;
+  border-radius: 5px;
+  box-shadow: 5px 5px 12px gray;
+  max-width: 600px;
+  padding: 10px 30px;
+  margin: 30px auto;
+}
+
+.App-header:hover {
+  background-color: #fad0c4;
+}
+
+.footer {
+  margin: 20px 0 0;
+  font-size: 14px;
 }
