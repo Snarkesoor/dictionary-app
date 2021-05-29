@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./Search.css";
-//import Definition from "./Definition";
+import Definition from "./Definition";
 
 export default function Search() {
 let [keyword, setKeyword] = useState("");
+let [definitions, setDefinitions] = useState(null);
 
     function handleResponse(response) {
-        //<Definition />;
-        console.log(response.data[0]);
+        //console.log(response.data[0].meaning[0].definitions[0].definition);
+        setDefinitions(response.data[0]);
     }
 
     function search(event) {
@@ -27,9 +28,9 @@ let [keyword, setKeyword] = useState("");
         <input 
         type="search" 
         onChange = {handleKeyword}
-        autoFocus={true} 
         placeholder="Type any word" />    
     </form>
+    <Definition definitions={definitions}/>
     </div>
     );
 }
