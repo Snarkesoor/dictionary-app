@@ -1,34 +1,35 @@
 body {
-  background-image: linear-gradient(
-    45deg,
-    #ff9a9e 0%,
-    #fad0c4 99%,
-    #fad0c4 100%
-  );
+  background-image: linear-gradient(to right, #cbbacc 0%, #2580b3 100%);
+  -image: linear-gradient(to right, #e3fdf5 0%, #ffe6fa 100%);
+  background-size: 100%;
   font-family: "Lora", serif;
 }
 
-.container {
+.App {
+  position: relative;
+  min-height: 100vh;
   text-align: center;
+}
+
+.container {
+  padding-bottom: 2.5rem;
 }
 
 .App-header {
-  text-align: center;
-  background-color: rgb(235, 219, 219);
-  border-color: gray;
-  border-style: outset;
-  border-radius: 5px;
-  box-shadow: 5px 5px 12px gray;
+  font-size: 100px;
   max-width: 600px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   margin: 30px auto;
 }
 
-.App-header:hover {
-  background-color: #fad0c4;
-}
-
 .footer {
-  margin: 20px 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
   font-size: 14px;
+  height: 2.5rem;
 }

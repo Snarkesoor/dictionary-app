@@ -1,3 +1,8 @@
 .dictionary {
   text-align: center;
 }
+
+.d-flex {
+  width: 300px;
+  margin: 30px auto 30px;
+}

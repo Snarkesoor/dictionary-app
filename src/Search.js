@@ -23,7 +23,7 @@ let [photos, setPhotos] = useState(null);
         axios.get(apiUrl).then(handleResponse);
 
         let pexelsApiKey ="563492ad6f91700001000001a93e0353dd6947048f999d6aa9fd3851";
-        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=12`;
+        let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
         axios.get(pexelsApiUrl, { headers: {"Authorization" : `Bearer ${pexelsApiKey}` }}).then(handlePexelsResponse);
     }
 
@@ -32,15 +32,21 @@ let [photos, setPhotos] = useState(null);
     }
 
     return (
+        <div>
     <div className="dictionary">
-    <form onSubmit={search}>
-        <input 
-        type="search" 
-        onChange = {handleKeyword}
-        placeholder="Type any word" />    
-    </form>
+            <form className="d-flex" onSubmit={search}>
+                <input 
+                className="form-control me-2"
+                type="search" 
+                onChange = {handleKeyword}
+                placeholder="Type any word..." />    
+            </form>
+    </div> 
+    <div>
+    <hr/>
     <Definition definitions={definitions}/>
     <Photos photos={photos}/>
+    </div>
     </div>
     );
 }

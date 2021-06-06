@@ -1,23 +1,20 @@
-.word {
+section {
   text-align: center;
-  background-color: rgb(235, 219, 219);
-  border-color: gray;
-  border-style: outset;
+  background-color: rgb(233, 239, 250);
+  border-color: black;
+  border-style: dashed;
+  border-width: 2px;
   border-radius: 5px;
-  box-shadow: 5px 5px 12px gray;
-  max-width: 300px;
-  padding: 10px 20px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  padding: 30px;
   margin: 30px auto;
 }
 
 .definition {
-  text-align: justify;
-  background-color: rgb(235, 219, 219);
-  border-color: gray;
-  border-style: outset;
-  border-radius: 5px;
-  box-shadow: 5px 5px 12px gray;
-  max-width: 600px;
-  padding: 10px 30px;
-  margin: 30px auto;
+  text-align: left;
+}
+
+.word {
+  font-size: 50px;
 }
